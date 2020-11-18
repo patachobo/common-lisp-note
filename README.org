@@ -1,0 +1,5 @@
+#+TITLE: Readme
+
+* Inizio di una magica avventura in lisp
+* Primo programma
+** aggiunto il file "hello.lisp"
