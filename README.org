@@ -25,3 +25,4 @@ defvar si utilizza in modo analogo a defparameter, ma al contrario di quest'ulti
 (defvar *foo* 5)
 (defvar *foo* 10)
 #+end_src
+in questo caso *foo* continuera' ad avere il valore col quale e' stata inizializzata, cioe' 5
