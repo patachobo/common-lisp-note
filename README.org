@@ -3,3 +3,25 @@
 * Inizio di una magica avventura in lisp
 * Primo programma
 ** aggiunto il file "hello.lisp"
+** scrivere :q nel REPL se non funziona qualcosa o succedono anomalie
+* Guessing number game
+** definizione di una variabile globale
+*** defparameter
+per definire una variabile globale si usa la parola riservata defparameter seguita dal nome della variabile inclusa tra 2 "*" (completamente facoltativi), ed in fine il valore di inizializzazione.
+un esempio correlato al progetto Guessing number:
+#+begin_src lisp
+(defparameter *small* 1)
+(defparameter *big* 100)
+#+end_src
+defparameter sovrascrive il valore precedente della variabile ad un nuovo utilizzo
+#+begin_src lisp
+(defparameter *foo* 5)
+(defparameter *foo* 10)
+#+end_src
+in questo caso foo acquistera' il nuovo valore di 10
+*** defvar
+defvar si utilizza in modo analogo a defparameter, ma al contrario di quest'ultimo non sovrascrive la variabile globale ad un secondo riutilizzo
+#+begin_src lisp
+(defvar *foo* 5)
+(defvar *foo* 10)
+#+end_src
