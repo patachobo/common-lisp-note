@@ -2,8 +2,8 @@
 
 * Inizio di una magica avventura in lisp
 * Primo programma
-** aggiunto il file "hello.lisp"
-** scrivere :q nel REPL se non funziona qualcosa o succedono anomalie
+** note
+- scrivere :q nel REPL se non funziona qualcosa o succedono anomalie
 * Guessing number game
 ** definizione di una variabile globale
 *** defparameter
