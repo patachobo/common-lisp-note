@@ -1,4 +1,5 @@
 #+TITLE: Readme
+#+startup: hideblocks
 
 * Inizio di una magica avventura in lisp
 * Primo programma
@@ -26,3 +27,27 @@ defvar si utilizza in modo analogo a defparameter, ma al contrario di quest'ulti
 (defvar *foo* 10)
 #+end_src
 in questo caso *foo* continuera' ad avere il valore col quale e' stata inizializzata, cioe' 5
+** valore di ritorno di una funzione
+a differenza di altri linguaggi, lisp non ha bisogno di ritornare un valore esplicitamente, la funzione lo ritorna automaticamente
+un esempio tra python e lisp:
+#+begin_src python
+# python
+def return_10():
+    return(10)
+#+end_src
+#+begin_src lisp
+;; lisp
+(defun return-10()
+  10)
+#+end_src
+** la funzione ash
+ash richiede due parametri entrambi interi, dove il primo e' il numero che verra' osservato in forma binaria, ed il secondo indica il numero di bits da shiftare a destra(-) o a sinistra(+), scartando i bits in eccesso
+esempio:
+#+begin_src lisp
+(ash 100 -1)  ;; 100 e' 0110 0100 in binario
+              ;; -1 come secondo parametro shifta a destra di un bit
+              ;; facendolo diventare 0011 0010, ovvero 50 in decimale
+(ash 100 2)   ;; al contrario, impostando il secondo parametro come uno
+              ;; 0110 0100 shiftera' di due bits a sinistra, facendolo
+              ;; diventare 0001 1001 0000, ovvero 400
+#+end_src
