@@ -1,7 +1,6 @@
-#+TITLE: Readme
+#+TITLE: Inizio di una magica avventura in Lisp
 #+startup: hideblocks
 
-* Inizio di una magica avventura in lisp
 * Primo programma
 ** note
 - scrivere :q nel REPL se non funziona qualcosa o succedono anomalie
